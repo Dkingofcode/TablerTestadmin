@@ -1,6 +1,6 @@
 .userActivity{
     background: white;
-    width: "600px"
+
 }
 
 .userActivity img{
@@ -9,7 +9,7 @@
 }
 
 .userActivity .users{
-
+  padding: 10px 0px;
 }
 
 .userActivity .users .head{
@@ -46,6 +46,57 @@
         background: white;
         width: "100%";
     }
+
+    .userActivity .users .list div{
+       gap: 5px;
+    }
+
+    .userActivity .users .list div p{
+        padding: 0px 10px;
+    }
+
+
+    .userActivity .users .head{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-bottom: 1px solid green;
+        padding: 1px 24px;
+        color: grey;
+        gap: 20px;
+        font-size: 12px;
+    }
+    
+
+    .userActivity .users .list{
+        display: grid;
+        align-items: center;
+        padding: 2px 10px;
+        border-bottom: 1px solid green;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .userActivity .users .list p{
+    
+        font-size: 12px;
+    }
+
+    .userActivity .users .list p{
+        font-size: 10px;
+    }
+    
+
+    
+    .userActivity .users .list  .userimg {
+        border-radius: 80%;    
+        width: 30px;
+        height: 36px;
+    }
+    
+    .userActivity .users .list  .calendar{
+        width: 20px;
+        height: 20px;
+    }
+    
 }
 
 

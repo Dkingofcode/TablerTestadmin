@@ -5,7 +5,7 @@ import "./userActivity.modules.css";
 const UserActivity = ({ chartData }) => {
   return (
     <div className="userActivity">
-     <LineChart chartData={chartData} />
+     <LineChart  chartData={chartData} />
         <div className="users">
           <div className="head">
             <p>USER</p>
@@ -17,9 +17,9 @@ const UserActivity = ({ chartData }) => {
 
            <div className="list">
              
-             <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+             <div style={{ display: "flex",  alignItems: "center" }}>
              <img className="userimg"  src="./tiffany-longewa.jpg" />
-             <p>Ronald Bradley</p>
+             <p className="userName">Ronald Bradley</p>
               </div>
 
              <p>Initial commit</p>
@@ -32,7 +32,7 @@ const UserActivity = ({ chartData }) => {
 
            <div className="list">
             
-            <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+            <div style={{ display: "flex",  alignItems: "center" }}>
              <img className="userimg" src="linyang.avif" />
              <p>Ronald Bradley</p>
              </div>
@@ -47,7 +47,7 @@ const UserActivity = ({ chartData }) => {
            </div>
 
            <div className="list">
-             <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+             <div style={{ display: "flex",  alignItems: "center" }}>
              <img className="userimg" src="good-faces.jpg" />
              <p>Ronald Bradley</p>
              </div>

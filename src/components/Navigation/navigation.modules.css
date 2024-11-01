@@ -1,6 +1,4 @@
-a{
-    
-}
+
 
 a:hover  {
     color: blue;
@@ -28,4 +26,18 @@ a img{
 .Navigation .navLinks img{
     width: 20px;
     height: 20px;
+}
+
+
+@media (max-width: 500px) {
+    a{
+        font-size: 15px;    
+    }
+
+    .Navigation .navLinks img{
+        width: 17px;
+        height: 17px;
+    }
+
+    
 }
