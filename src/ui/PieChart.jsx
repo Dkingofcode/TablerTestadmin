@@ -6,7 +6,7 @@ import "../styles/Piechart.css";
 function PieChart({ chartData }) {
   return (
     <div className="chart-container" style={{ backgroundColor: "white", width: "300px" }}>
-      <h2 style={{ textAlign: "center" }}>Pie Chart</h2>
+      <h2 style={{ textAlign: "center" }}>Chart Title</h2>
       <Pie
         data={ chartData }
         options={{

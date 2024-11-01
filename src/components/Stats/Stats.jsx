@@ -1,5 +1,5 @@
 import React from 'react';
-import StatCard from "../../ui/statCard";
+import StatCard from "../../ui/StatCard.jsx";
 import "./stats.modules.css"; 
 
 const Stats = () => {
