@@ -1,0 +1,45 @@
+.userActivity{
+    background: white;
+    width: "600px"
+}
+
+.userActivity img{
+    width: 50px;
+    height: 50px;
+}
+
+.userActivity .users{
+
+}
+
+.userActivity .users .head{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid green;
+    padding: 1px 24px;
+    color: grey;
+    gap: 10px;
+}
+
+.userActivity .users .list{
+    display: grid;
+    align-items: center;
+    padding: 2px 10px;
+    border-bottom: 1px solid green;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.userActivity .users .list  .userimg {
+    border-radius: 80%;    
+    width: 50px;
+    height: 50px;
+}
+
+.userActivity .users .list  .calendar{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+

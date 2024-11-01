@@ -1,0 +1,30 @@
+.Profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.Profile img {
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+
+
+.Profile-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 0px;
+}
+
+.Profile-info h3{
+    
+}
+
+.Profile-info p{
+
+}

@@ -1,0 +1,53 @@
+.header-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blue-link{
+    color: blue;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    border: 1px solid blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.notification .red-dot{
+  position: absolute;
+  background: red;
+  top: 3px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

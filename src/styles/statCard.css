@@ -1,0 +1,21 @@
+.stat-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid black;
+    flex-direction: column;
+    position: relative;
+    padding: 37px 50px;
+    gap: 20px;
+    font-size: 12px;
+}
+
+
+.stat-card span{
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  display: flex;
+  gap: 5px;
+}
