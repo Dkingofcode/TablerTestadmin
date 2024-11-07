@@ -9,7 +9,10 @@ import {
   CategoryScale,
   Tooltip,
   Legend,
+  LineController,
 } from "chart.js";
+
+
 
 ChartJS.register(
   LineElement,
@@ -18,7 +21,8 @@ ChartJS.register(
   Title,
   CategoryScale,
   Tooltip,
-  Legend
+  Legend,
+  LineController
 );
 
 const LineChart = forwardRef(({ chartData }, ref) => {

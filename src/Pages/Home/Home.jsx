@@ -16,18 +16,18 @@ const Home = () => {
     dispatch({ type: 'chart/fetchData' });
   }, [dispatch]);
 
-  const chartData = {
-    labels: ["January", "February", "March", "April"],
-    datasets: [
-      {
-        label: "Users Gained",
-        data: [30, 45, 60, 70],
-        backgroundColor: "rgba(75,192,192,1)",
-        borderColor: "black",
-        borderWidth: 2
-      }
-    ]
-  };
+  // const chartData = {
+  //   labels: ["January", "February", "March", "April"],
+  //   datasets: [
+  //     {
+  //       label: "Users Gained",
+  //       data: [30, 45, 60, 70],
+  //       backgroundColor: "rgba(75,192,192,1)",
+  //       borderColor: "black",
+  //       borderWidth: 2
+  //     }
+  //   ]
+  // };
   
 
 
