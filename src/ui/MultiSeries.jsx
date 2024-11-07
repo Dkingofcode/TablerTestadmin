@@ -32,7 +32,7 @@
 
 // DoughnutChart.js
 //import React from 'react';
-import { Doughnut } from 'react-chartjs-2';
+import { PolarArea } from 'react-chartjs-2';
 import PropTypes from "prop-types";
 import {
   Chart as ChartJS,
@@ -40,21 +40,22 @@ import {
   Tooltip,
   Legend,
   CategoryScale,
+  RadialLinearScale,
 } from 'chart.js';
 
-ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale);
+ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, RadialLinearScale);
 
-const DoughnutChart = ({ chartData }) => {
+const MultiSeriesChart = ({ chartData }) => {
   return (
     <div className="chart-container" style={{ backgroundColor: 'white', width: '300px' }}>
       <h2 style={{ textAlign: 'center' }}>Users Gained</h2>
-      <Doughnut data={chartData} />
+      <PolarArea data={chartData} />
     </div>
   );
 };
 
-export default DoughnutChart;
+export default MultiSeriesChart;
 
-DoughnutChart.propTypes = {
+MultiSeriesChart.propTypes = {
   chartData: PropTypes.object
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import "../styles/headerInfo.css";
 import Profile from "./Profile.jsx";
 
@@ -11,7 +11,7 @@ const HeaderInfo = () => {
         </div>
     
        <div className="notification">
-           <img src="./Notification.png" />
+           <img src="./Notification.png" alt="notification" />
            <span className="red-dot"></span>
         </div>
 

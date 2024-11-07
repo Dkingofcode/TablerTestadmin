@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import "../styles/profile.css";
 
 
@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <div className="Profile">
        <div className="Profile-img">
-         <img src="./Profilepic.jpg" />
+         <img src="./Profilepic.jpg" alt="profile" />
         </div>
         
         <div className="Profile-info">

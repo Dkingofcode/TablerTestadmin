@@ -1,7 +1,7 @@
-import React from "react";
+//import React from "react";
 import { Pie } from "react-chartjs-2";
 import "../styles/Piechart.css";
-
+import PropTypes from "prop-types";
 
 function PieChart({ chartData }) {
   return (
@@ -22,3 +22,7 @@ function PieChart({ chartData }) {
   );
 }
 export default PieChart;
+
+PieChart.propTypes = {
+  chartData: PropTypes.object
+}

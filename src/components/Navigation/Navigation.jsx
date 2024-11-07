@@ -1,41 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./navigation.modules.css";
 
 const Navigation = () => {
-//    const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
 
-//    const handleClick = (link) => {
-//       navigate(link)
-//    }
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     return (
-    <div className="Navigation">
-       <ul className="navLinks">
-        <div className="link">
-        <Link style={{ textDecoration: "none", color: "grey" }} to="/"><img src="home.png" /> Home</Link>
+        <div className="Navigation">
+            <button className="hamburger" onClick={toggleMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </button>
+            
+            <ul className={`navLinks ${menuOpen ? "open" : ""}`}>
+                <div className="link">
+                    <Link to="/" className="navLink">
+                        <img src="home.png" alt="Home icon" /> Home
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link to="/interface" className="navLink">
+                        <img src="cube.png" alt="Interface icon" /> Interface
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link to="/components" className="navLink">
+                        <img src="folder.png" alt="Components icon" /> Components
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link to="/pages" className="navLink">
+                        <img src="file.png" alt="Pages icon" /> Pages
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link to="/forms" className="navLink">
+                        <img src="form.png" alt="Forms icon" /> Forms
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link to="/gallery" className="navLink">
+                        <img src="gallery.png" alt="Gallery icon" /> Gallery
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link to="/documentation" className="navLink">
+                        <img src="file.png" alt="Documentation icon" /> Documentation
+                    </Link>
+                </div>
+            </ul> 
         </div>
-        <div className="link">
-        <Link style={{ textDecoration: "none", color: "grey" }} to="/interface"><img src="cube.png" /> Interface</Link>
-        </div>
-        <div className="link">
-        <Link style={{ textDecoration: "none", color: "grey" }} to="/components"><img src="folder.png" /> Components</Link>
-        </div>
-        <div className="link">
-        <Link style={{ textDecoration: "none", color: "grey" }} to="/pages"><img src="file.png" /> Pages</Link>
-         </div>
-         <div className="link">
-        <Link style={{ textDecoration: "none", color: "grey" }} to="/forms"><img src="form.png" /> Forms</Link>
-        </div>
-        <div className="link">
-        <Link style={{ textDecoration: "none", color: "grey" }} to="/gallery"><img src="gallery.png" /> Gallery</Link>
-         </div>
-         <div className="link">
-        <Link style={{ textDecoration: "none", color: "grey" }} to="documentation"><img src="file.png" /> Documentation</Link>
-        </div>
-       </ul> 
-    </div>
-  )
-}
+    );
+};
 
 export default Navigation;
