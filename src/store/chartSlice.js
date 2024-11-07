@@ -32,8 +32,16 @@ const chartSlice = createSlice({
   name: 'chart',
   initialState: {
     data: {
-      labels: [],
-      datasets: [],
+        labels: ["Red", "Orange", "Yellow", "Green", "Blue"],
+        datasets: [
+          {
+            label: "Dataset 1",
+            data: [12, 19, 3, 5, 2],
+            backgroundColor: "rgba(75, 192, 192, 0.2)", // Set to a single color string
+            borderColor: "rgba(75, 192, 192, 1)",
+            borderWidth: 2,
+          },
+        ],
     },
   },
   reducers: {

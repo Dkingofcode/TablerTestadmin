@@ -38,7 +38,7 @@ const Home = () => {
       <Stats  />
 
       <div className="Charts">
-        <UserActivity chartData={chartData} />
+        <UserActivity chartData={ChartData} />
          
          <ChartGrid chartData={ChartData} />
        </div> 
